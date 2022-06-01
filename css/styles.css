@@ -51,11 +51,6 @@ nav{
     border-bottom-left-radius: 15px;
 }
 
-.nav-active{
-    transform: translateX(0%);
-}
-
-
 
 .nav-links li{
     list-style: none;
@@ -79,9 +74,29 @@ nav{
 }
 
 .burger-icon{
+    width: 26.25px;
+    height: 30px;
     font-size: 30px;
 }
 
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(25px);
+    }
+    to{
+        opacity: 0.5;
+        transform: translateX(25px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
 
 /* principal home */
