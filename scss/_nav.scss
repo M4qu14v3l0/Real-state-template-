@@ -28,7 +28,13 @@ nav{
         padding: 0;
     }
     a{
+        
+        transition: all 0.3s ease-in-out ;
         color: aliceblue;
+        text-decoration: none;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -62,7 +68,11 @@ nav{
     display: none;
 
     li{
+        transition: all 0.3s ease-in-out ;
         list-style: none;
+        &:hover{
+            transform: scale(1.1);
+        }
         padding: 0;
         margin: 0;
     }
