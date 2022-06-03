@@ -11,6 +11,16 @@ font-family: 'Rubik', sans-serif;
 }
 
 @media(min-width: 470px){
+
+    .logo-text-bg{
+        width: 250px;
+        height: 250px;
+        z-index: 0;
+        margin-bottom: 30px;
+        
+    }
+
+
     .section-wrapper{
         height: 65vh;
     }
@@ -214,6 +224,7 @@ font-family: 'Rubik', sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
+
 
     .logo{
         img{
