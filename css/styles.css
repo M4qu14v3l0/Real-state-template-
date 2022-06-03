@@ -70,8 +70,8 @@ main {
     margin: 5px; }
 
 .logo-text-bg {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   z-index: 0; }
 
 .principal-home-input {
@@ -81,9 +81,9 @@ main {
   align-items: center; }
 
 .input-container {
-  width: 200px;
-  background-color: white;
+  z-index: 4;
   border: 1px solid #A5BECC;
+  width: 100%;
   border-radius: 2px;
   display: flex;
   align-items: center;
@@ -94,11 +94,14 @@ main {
   width: 100%;
   border: 0;
   border-radius: 2px; }
+  .input:focus {
+    outline: none; }
 
 .location-icon {
-  color: peru;
+  color: #cd853f;
   font-size: 30px;
-  padding: 0 10px 0 10px; }
+  padding: 0 10px 0 10px;
+  opacity: .5; }
 
 .button-home {
   margin-top: 20px;
@@ -732,7 +735,8 @@ select:-webkit-autofill:focus {
   text-align: center;
   background-color: rgba(247, 236, 213, 0.7);
   width: 100%;
-  height: fit-content; }
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; }
   .meet-us-bg h1 {
     font-weight: bolder;
     font-size: 60px;
@@ -741,6 +745,62 @@ select:-webkit-autofill:focus {
       font-weight: 100; }
   .meet-us-bg p {
     color: #243A73; }
+
+.sellers-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .sellers-wrapper h1, .sellers-wrapper h2, .sellers-wrapper p {
+    margin: 10px; }
+  .sellers-wrapper p {
+    color: #243A73;
+    font-size: 17px;
+    line-height: 26px; }
+  .sellers-wrapper h1 {
+    font-size: 40px;
+    color: peru; }
+  .sellers-wrapper h2 {
+    color: #243A73;
+    font-size: 40px;
+    font-weight: 100; }
+    .sellers-wrapper h2 span {
+      font-weight: bolder; }
+  .sellers-wrapper img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    box-shadow: #26394d 0px 20px 30px -10px;
+    margin-top: 20px; }
+
+.contract-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .contract-wrapper h1, .contract-wrapper h2, .contract-wrapper p {
+    margin: 10px; }
+  .contract-wrapper p {
+    color: #243A73;
+    font-size: 17px;
+    line-height: 26px; }
+  .contract-wrapper h1 {
+    font-size: 40px;
+    color: #243A73; }
+  .contract-wrapper h2 {
+    color: #243A73;
+    font-size: 30px;
+    font-weight: bolder; }
+    .contract-wrapper h2 span {
+      font-size: 20px;
+      font-weight: 100;
+      color: peru; }
+  .contract-wrapper img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    box-shadow: #26394d 0px 20px 30px -10px;
+    margin-top: 20px; }
 
 header {
   position: sticky;
@@ -770,7 +830,8 @@ nav {
       transform: scale(1.1); }
 
 .img-logo-nav {
-  width: 50px; }
+  height: 70px;
+  width: 70px; }
 
 .nav-links {
   position: absolute;
@@ -806,6 +867,7 @@ nav {
   cursor: pointer; }
 
 .burger-icon {
+  color: aliceblue;
   width: 26.25px;
   height: 30px;
   font-size: 30px; }
@@ -854,116 +916,94 @@ nav {
     font-weight: 100; }
     .title-market-home h1 span {
       font-size: 70px; }
-  .aboutUs-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    .aboutUs-wrapper h1, .aboutUs-wrapper h2, .aboutUs-wrapper p {
-      margin: 10px; }
-    .aboutUs-wrapper p {
+  .aboutUs-wrapper p {
+    color: #243A73;
+    font-size: 17px;
+    line-height: 26px; }
+  .aboutUs-wrapper h1 {
+    font-weight: bolder;
+    font-size: 30px;
+    color: peru;
+    font-weight: 100;
+    text-transform: uppercase; }
+  .aboutUs-wrapper h2 {
+    color: #243A73;
+    font-size: 50px;
+    font-weight: 100; }
+    .aboutUs-wrapper h2 span {
       color: #243A73;
-      font-size: 17px;
-      line-height: 26px; }
-    .aboutUs-wrapper h1 {
       font-weight: bolder;
-      font-size: 30px;
+      font-size: 60; }
+  .fairTrade-wrapper p {
+    color: #243A73;
+    font-size: 17px;
+    line-height: 26px; }
+  .fairTrade-wrapper h1 {
+    font-weight: bolder;
+    font-size: 50px;
+    color: #243A73; }
+  .fairTrade-wrapper h2 {
+    color: #243A73;
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: uppercase; }
+    .fairTrade-wrapper h2 span {
       color: peru;
-      font-weight: 100;
-      text-transform: uppercase; }
-    .aboutUs-wrapper h2 {
-      color: #243A73;
-      font-size: 50px;
-      font-weight: 100; }
-      .aboutUs-wrapper h2 span {
-        color: #243A73;
-        font-weight: bolder;
-        font-size: 60; }
-    .aboutUs-wrapper img {
-      height: auto;
-      max-width: 100%;
-      display: block;
-      object-fit: cover;
-      box-shadow: #26394d 0px 20px 30px -10px;
-      margin-top: 20px; }
-  .fairTrade-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    .fairTrade-wrapper h1, .fairTrade-wrapper h2, .fairTrade-wrapper p {
-      margin: 10px; }
-    .fairTrade-wrapper p {
-      color: #243A73;
-      font-size: 17px;
-      line-height: 26px; }
-    .fairTrade-wrapper h1 {
       font-weight: bolder;
-      font-size: 50px;
-      color: #243A73; }
-    .fairTrade-wrapper h2 {
-      color: #243A73;
-      font-size: 40px;
+      font-size: 25px; }
+  .support-wrapper p {
+    color: #243A73;
+    font-size: 17px;
+    line-height: 26px; }
+  .support-wrapper h1 {
+    font-size: 50px;
+    font-weight: 100;
+    color: #243A73; }
+  .support-wrapper h2 {
+    color: #243A73;
+    font-size: 50px;
+    font-weight: bold; }
+  .care-wrapper p {
+    color: #243A73;
+    font-size: 17px;
+    line-height: 26px; }
+  .care-wrapper h1 {
+    font-size: 50px;
+    color: #243A73; }
+  .care-wrapper h2 {
+    color: #243A73;
+    font-size: 50px;
+    font-weight: 100; }
+  .sellers-wrapper p {
+    color: #243A73;
+    font-size: 17px;
+    line-height: 26px; }
+  .sellers-wrapper h1 {
+    font-size: 25px;
+    color: peru;
+    font-weight: 100; }
+  .sellers-wrapper h2 {
+    color: #243A73;
+    font-size: 50px;
+    font-weight: 100; }
+    .sellers-wrapper h2 span {
+      font-weight: bolder;
+      font-size: 60px; }
+  .contract-wrapper p {
+    color: #243A73;
+    font-size: 17px;
+    line-height: 26px; }
+  .contract-wrapper h1 {
+    font-size: 50px;
+    color: #243A73; }
+  .contract-wrapper h2 {
+    color: #243A73;
+    font-size: 45px;
+    font-weight: bolder; }
+    .contract-wrapper h2 span {
+      font-size: 30px;
       font-weight: 100;
-      text-transform: uppercase; }
-      .fairTrade-wrapper h2 span {
-        color: peru;
-        font-weight: bolder;
-        font-size: 25px; }
-    .fairTrade-wrapper img {
-      height: auto;
-      max-width: 100%;
-      display: block;
-      object-fit: cover;
-      box-shadow: #26394d 0px 20px 30px -10px;
-      margin-top: 20px; }
-  .support-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    .support-wrapper h1, .support-wrapper h2, .support-wrapper p {
-      margin: 10px; }
-    .support-wrapper p {
-      color: #243A73;
-      font-size: 17px;
-      line-height: 26px; }
-    .support-wrapper h1 {
-      font-size: 50px;
-      font-weight: 100;
-      color: #243A73; }
-    .support-wrapper h2 {
-      color: #243A73;
-      font-size: 50px;
-      font-weight: bold; }
-    .support-wrapper img {
-      height: auto;
-      max-width: 100%;
-      display: block;
-      object-fit: cover;
-      box-shadow: #26394d 0px 20px 30px -10px;
-      margin-top: 20px; }
-  .care-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    .care-wrapper h1, .care-wrapper h2, .care-wrapper p {
-      margin: 10px; }
-    .care-wrapper p {
-      color: #243A73;
-      font-size: 17px;
-      line-height: 26px; }
-    .care-wrapper h1 {
-      font-size: 50px;
-      color: #243A73; }
-    .care-wrapper h2 {
-      color: #243A73;
-      font-size: 50px;
-      font-weight: 100; }
-    .care-wrapper img {
-      height: auto;
-      max-width: 100%;
-      display: block;
-      object-fit: cover;
-      box-shadow: #26394d 0px 20px 30px -10px;
-      margin-top: 20px; } }
+      color: peru; } }
 
 @media only screen and (min-width: 768px) {
   .logo img {

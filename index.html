@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./css/glider.css">
 
 
+
+
    <!-- icons -->
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -30,6 +32,10 @@
 
    <link rel="stylesheet" href="./css/styles.css">
 
+   <!-- autocomplete -->
+
+   <script src="https://cdn.jsdelivr.net/gh/tomik23/autocomplete@1.8.3/dist/js/autocomplete.min.js"></script>
+   <link rel="stylesheet" href="./css/autocomplete.min.css"/>
 
 <title>Home</title>
 
@@ -59,12 +65,14 @@
                 <li>
                     <a href="./pages/wholesellers.html">Whole sellers</a>
                 </li>
+                <li>
+                    <a href="">
+                        +51 987-653-785
+                    </a>
+                </li>
 
             </ul>
 
-                <a href="">
-                    +51 987-653-785
-                </a>
             <div class="burger-nav">
                 <i class="fa-solid fa-bars burger-icon " onclick="changeIcon(this)"></i>
             </div>
@@ -85,13 +93,11 @@
 
                 <h2>Lorem Ipsum Dolor Sit.</h2>
             </div>
-
             <div class="principal-home-input">
-                <div class="input-container">
-                    <i class="fa-solid fa-location-dot location-icon"
-                    ></i>
-                    <input type="text" class="input" placeholder="Enter your street"> 
+                <div class="input-container auto-search-wrapper loupe">
+                    <input type="text" autocomplete="off"  id="search" class="input full-width" placeholder="Enter your street"> 
                 </div>
+                <!-- <i class="fa-solid fa-location-dot location-icon"></i> -->
             </div>     
             <div class="button-home">
                 <button>
@@ -251,7 +257,7 @@
 
         <!-- how it works? -->
 
-        <section class="section-wrapper-how-works">
+        <section class="general-wrapper">
             <div class="how-works">
                 <h2>How it <span>Works</span></h2>
                 <div class="container-line-time">
@@ -289,7 +295,7 @@
         <!-- get your offer   -->
 
 
-        <section class="section-wrapper-offer">
+        <section class="general-wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -333,6 +339,10 @@
     <script src="./js/button.js"></script>
 
     <script src="./js/text.js"></script>
+
+    <!-- autocomplete -->
+
+    <script src="https://tomik23.github.io/Leaflet.Autocomplete/script.js"></script>
 
 </body>
 

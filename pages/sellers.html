@@ -29,6 +29,9 @@
     
        <link rel="stylesheet" href="../css/styles.css">
 
+       <script src="https://cdn.jsdelivr.net/gh/tomik23/autocomplete@1.8.3/dist/js/autocomplete.min.js"></script>
+       <link rel="stylesheet" href="../css/autocomplete.min.css"/>
+
     <title>Sellers</title>
 </head>
 <body>
@@ -81,13 +84,12 @@
                             <h2>Sell Your Home <br><span>Fast For Cash</span></h2>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero aliquam porro corporis labore necessitatibus deleniti cupiditate id a, voluptates quam animi ducimus, incidunt nulla. Dolore deserunt laboriosam aspernatur quae quis.</p>
                     
-                        <div class="principal-home-input">
-                            <div class="input-container">
-                                <i class="fa-solid fa-location-dot location-icon"
-                                ></i>
-                                <input type="text" class="input" placeholder="Enter your street"> 
-                            </div>
-                        </div>     
+                            <div class="principal-home-input">
+                                <div class="input-container auto-search-wrapper loupe">
+                                    <input type="text" autocomplete="off"  id="search" class="input full-width" placeholder="Enter your street"> 
+                                </div>
+                                <!-- <i class="fa-solid fa-location-dot location-icon"></i> -->
+                            </div>       
                         <div class="button-home">
                             <button>
                                 Get My Offer!
@@ -415,7 +417,7 @@
             </div>
         </div>
 
-</section>
+    </section>
 </main>
     <footer>
         <p>Copyright © RCV</p>
@@ -438,5 +440,7 @@
     <script src="../js/button.js"></script>    
 
     <script src="../js/text.js"></script>
+
+    <script src="https://tomik23.github.io/Leaflet.Autocomplete/script.js"></script>
 </body>
 </html>
