@@ -38,9 +38,25 @@ nav{
     }
 }
 
+
+.cell-phone{
+    font-size: 20px;
+}
+
+.nav-icon{
+    color: peru;
+    font-size: 20px;
+}
+
 .img-logo-nav{
-    height: 70px;
-    width: 70px;
+    opacity: 0.9;
+    height: 100px;
+    width: 100px;
+}
+
+.house-logo{
+    font-size: 30px;
+    color: peru;
 }
 .nav-links {
     position: absolute;
@@ -71,15 +87,21 @@ nav{
     li{
         transition: all 0.3s ease-in-out ;
         list-style: none;
-        &:hover{
-            transform: scale(1.1);
-        }
         padding: 0;
         margin: 0;
+        &:hover{
+            transform: scale(1.1);
+
+        }
     }
     a{
         color: aliceblue;
         text-decoration: none;
+        font-size: 25px;
+        &:hover{
+
+            color: #F7ECD5;
+        }
     }
 }
 

@@ -5,6 +5,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 
 }
 
@@ -111,8 +112,8 @@ main{
 
 
 .logo-text-bg{
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     z-index: 0;
     
 }
@@ -122,6 +123,14 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}   
+
+.principal-offer-input{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }   
 
 
@@ -458,7 +467,7 @@ main{
     font-weight: 300;
   }
   .timeline-content .step {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 300;
     margin-bottom: 10px;
     letter-spacing: 2px;
