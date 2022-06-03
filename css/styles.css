@@ -809,6 +809,9 @@ select:-webkit-autofill:focus {
     box-shadow: #26394d 0px 20px 30px -10px;
     margin-top: 20px; }
 
+footer p {
+  color: peru; }
+
 header {
   position: sticky;
   width: 100%;
